@@ -55,7 +55,7 @@
     "axios": "^0.16.2",
     "chart.js": "^2.7.1",
     "element-ui": "^2.0.4",
-    "node-sass": "^4.6.1",
+    "node-sass": "^4.11.0",
     "node.bittrex.api": "^1.0.0",
     "sass-loader": "^6.0.6",
     "vue": "^2.3.3",
