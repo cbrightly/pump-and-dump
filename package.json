@@ -14,7 +14,9 @@
     "pack": "npm run pack:main && npm run pack:renderer",
     "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
     "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
-    "postinstall": ""
+    "postinstall": "",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "build": {
     "productName": "pump-and-dump",
@@ -63,7 +65,8 @@
     "vue-charts": "^0.2.1",
     "vue-electron": "^1.0.6",
     "vue-router": "^2.5.3",
-    "vuex": "^2.3.1"
+    "vuex": "^2.3.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
@@ -98,5 +101,6 @@
     "webpack": "^3.5.2",
     "webpack-dev-server": "^2.7.1",
     "webpack-hot-middleware": "^2.18.2"
-  }
+  },
+  "snyk": true
 }
